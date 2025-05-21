@@ -17,7 +17,7 @@ def tradingview_webhook():
     signal = data.get('signal', 'N/A')
     time = data.get('time', 'N/A')
 
-    message = f"📈 트레이딩뷰 시그널\n\n🪙 종목: {symbol}\n💵 가격: {price}\n📌 시그널: {signal}\n⏰ 시간: {time}"
+    message = f"📊 02트레이더 단타 시그널\n\n🔥 종목: {symbol}\n💵 가격: {price}\n📌 시그널: {signal}\n⏰ 시간: {time}"
 
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     payload = {
